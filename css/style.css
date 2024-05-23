@@ -1,4 +1,11 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
+/* Created by: Yoochan
+* Created on: May 2024
 * This file contains the CSS for index.html
 */
+
+.center-image {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}

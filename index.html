@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Title</title>
-  </head>
-  <body>
-    <p>Paragraph</p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="The information program, in JS" />
+  <meta name="author" content="Yoochan Han" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+  <title>Cookie!! coo cookie!</title>
+</head>
+<body onload="update_cookie()">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Cookie!!</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <h4>Click the Cookie</h4>
+
+      <div style="text-align: center;">
+        <h5>total cookies: <span id="click-count"> </span></h5>
+        <img src="./cookie.png" alt="COOKIE!!!" onclick="cookie_cook()" class="center-image" />
+      </div>
+    </main>
+  </div>
+</body>
 </html>

@@ -1,5 +1,16 @@
 // Copyright (c) 2020 Mr. Coxall All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Yoochan
+// Created on: May 2024
 // This file contains the JS functions for index.html
+let clicks = parseInt(localStorage.getItem("click-count")) || 0
+
+function update_cookie() {
+  document.getElementById("click-count").innerHTML = "total cookies: " + clicks
+}
+// Im hungry
+function cookie_cook() {
+  clicks++
+  update_cookie()
+}
+ 
