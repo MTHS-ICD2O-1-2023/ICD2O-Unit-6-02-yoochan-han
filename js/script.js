@@ -6,11 +6,12 @@
 let clicks = parseInt(localStorage.getItem("click-count")) || 0
 
 function update_cookie() {
-  document.getElementById("click-count").innerHTML = "total cookies: " + clicks
+  document.getElementById("click-count").innerHTML = clicks
 }
 // Im hungry
 function cookie_cook() {
   clicks++
   update_cookie()
+  localStorage.setItem("click-count", clicks)
 }
  
